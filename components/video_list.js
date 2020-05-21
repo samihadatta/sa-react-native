@@ -121,6 +121,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 5,
     height: 100,
+    marginRight: 5,
   },
   title: {
     fontSize: 16,
