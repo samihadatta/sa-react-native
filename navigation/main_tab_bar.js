@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/FontAwesome';
@@ -25,9 +24,16 @@ const MainTabBar = () => {
             }
 
             // Return the respective icon
-            return <Ionicons name={iconName} size={26} color={focused ? '#58AADA' : 'grey'} />;
+            return <Ionicons name={iconName} size={26} color={focused ? 'white' : 'black'} />;
           },
         })}
+        tabBarOptions={{
+          activeTintColor: 'white',
+          inactiveTintColor: 'black',
+          style: {
+            backgroundColor: '#c4302b',
+          },
+        }}
       >
         <Tab.Screen name="Search" component={SearchTab} />
         <Tab.Screen name="About" component={About} />
